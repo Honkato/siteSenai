@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styleProd.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="cabecalho">
+
+    
+        <header>
+            <div class="esquerda">
+                <div class="logo">
+                    <a href="../index.html"><img src="../../SiteAnormal/img/fire.png" alt=""><p>Blue Heat</p></a>
+                </div>
+                <div class="logo">
+                    <img src="../../SiteAnormal/img/heart.png" alt="">
+                    <a href="../carrinho.html"><img src="../../SiteAnormal/img/cartWhite.png" alt=""></a>
+                </div>
+            </div>
+            <div class="pesquisa">
+                <a href="#">
+                <div class="lupa">
+                    <div></div>
+                    <div></div>
+                </div>
+                </a>
+                <input type="text" placeholder="FAÇA SUA BUSCA" class="text_input"/>
+            </div>
+        </header>
+        <div id="tB">
+            <div id="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div id="menuMobileBack">
+            <ul>
+                <li><u>Home</u></li>
+                <li><a href="#">lorem ipsum</a></li>
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">ipsum lorem </a></li>
+                <li><a href="#"></a>ipsum </li>
+                <li>Login/Cadastro</li>
+            </ul>
+        </div>
+        <div id="menuMobile"></div>
+        <nav>
+            <div id="menuCat">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="categorias">
+                <a href="#">Filmes</a>
+                <a href="#">Séries</a>
+                <a href="#">Jogos</a>
+                <a href="#">Animes</a>
+                <a href="#">Original Characters</a>
+            </div>
+        </nav>
+        </div>
+
+
+    <div class="container">
+
+        <div class="prodPrince">
+            <img src="../img/alice.jpg" alt="Artorias em seu estado Glorioso">
+            <h1>Alice</h1>
+            <h2>Description</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur consectetur quis rem dolores! Quidem laborum, dolore aperiam, veritatis reiciendis ut hic, architecto voluptate voluptatem explicabo minus. Natus officiis ipsa repudiandae!</p>
+            <a href="javascript:void(0)" id="prod" onclick="adicionar(4)">Comprar</a>
+            <div class="precos">
+                <div class="valor">
+                        R$24,99
+                </div>
+                <div class="quant">
+                    <div onclick="alertas()">-</div>
+                    <div>1</div>
+                    <div onclick="alertas()">+</div>
+                </div>
+            </div>
+                
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <footer>
+        <div class="pe">
+            Condições de Uso |
+            Notificação de Privacidade |
+            Cookies |
+                Anúncios Baseados em Interesses 
+                <p>© 2021-2022 BlueHeat.com, Inc. ou suas afiliadas</p>
+                <p>BlueHeat Serviços do Brasil Ltda. | CNPJ 12.123.123/1234-12</p>
+                <p>Av. Com o Cruzamento, 2022, Torre E, 2° andar - São CEP: 13113-131| Fale conosco| ajuda-Blue@Heat.com.br</p>
+                <p>Formas de pagamento aceitas: cartões de crédito (Visa, MasterCard, Elo e American Express), cartões de débito (Visa e Elo), Boleto e Pix</p>
+                <p>Não fazemos fiado.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="../menu.js"></script>
+<script src="../carrinho.js"></script>
+
+<script>
+var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+</script>
