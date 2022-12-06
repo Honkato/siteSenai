@@ -33,18 +33,29 @@ function addCarrinho(produtos, precos, url){
     console.log(listaProdutos)
     exibirProdutos()
 }
-
+function comprar(){
+    listaProdutos = []
+    salvarCarrinho()
+    obterCarrinho()
+    alert('Itens Comprados')
+}
 function exibirProdutos(){
     var codHTML = '<h2>PRODUTOS</h2>';
     var i = 0;
+    var precoTotal = 0;
     listaProdutos.forEach((prod) => {
         i += 1;
         console.log(i)
         if (todos != null){
         codHTML += `<div class="divisao" id="${i}"><a href="${prod.url}"><h1>${prod.nome}</h1></a><div class="flex">R$ ${(prod.valor)}<a href="javascript:void(0)" onclick="excluir(${i})"><div id="x"><div></div><div></div></div></a></div></div>`
-        todos.innerHTML = codHTML
+        precoTotal += prod.valor
+        // todos.innerHTML = codHTML
         }
     });
+    if (todos != null){
+        codHTML += `<div class="precoTotal">TOTAL:  R$${precoTotal.toFixed(2)}</div>`
+        todos.innerHTML = codHTML
+    }
     salvarCarrinho()
 }
 

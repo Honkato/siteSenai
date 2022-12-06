@@ -13,15 +13,14 @@
 <body>
     <div class="cabecalho">
 
-    
         <header>
             <div class="esquerda">
                 <div class="logo">
-                    <a href="../index.html"><img src="../../SiteAnormal/img/fire.png" alt=""><p>Blue Heat</p></a>
+                    <a href="../index.html"><img src="../img/fire.png" alt=""><p>Blue Heat</p></a>
                 </div>
                 <div class="logo">
-                    <img src="../../SiteAnormal/img/heart.png" alt="">
-                    <a href="../carrinho.html"><img src="../../SiteAnormal/img/cartWhite.png" alt=""></a>
+                    <img src="../img/heart.png" alt="">
+                    <a href="../carrinho.html"><img src="../img/cartWhite.png" alt=""></a>
                 </div>
             </div>
             <div class="pesquisa">
@@ -32,6 +31,7 @@
                 </div>
                 </a>
                 <input type="text" placeholder="FAÇA SUA BUSCA" class="text_input"/>
+    
             </div>
         </header>
         <div id="tB">
@@ -63,34 +63,34 @@
                 <a href="#">Séries</a>
                 <a href="#">Jogos</a>
                 <a href="#">Animes</a>
-                <a href="#">Original Characters</a>
+                <a href="../cates/oc.html">Original Characters</a>
             </div>
         </nav>
         </div>
 
 
     <div class="container">
-
         <div class="prodPrince">
-            <img src="../img/lubella.jpg" alt="Artorias em seu estado Glorioso">
-            <h1>Lubella, the Witch of Decay</h1>
-            <h2>Description</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur consectetur quis rem dolores! Quidem laborum, dolore aperiam, veritatis reiciendis ut hic, architecto voluptate voluptatem explicabo minus. Natus officiis ipsa repudiandae!</p>
-            <a href="javascript:void(0)" id="prod" onclick="adicionar(7)">Comprar</a>
-            <div class="precos">
-                <div class="valor">
-                        R$24,99
-                </div>
-                <div class="quant">
-                    <div onclick="alertas()">-</div>
-                    <div>1</div>
-                    <div onclick="alertas()">+</div>
-                </div>
+            <div class="prod">
+                <img src="../img/lubella.jpg" alt="Artorias em seu estado Glorioso">
+                <h1>Lubella, the Witch of Decay</h1>
             </div>
-                
+            <div class="desc">
+                <h2>Description</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur consectetur quis rem dolores! Quidem laborum, dolore aperiam, veritatis reiciendis ut hic, architecto voluptate voluptatem explicabo minus. Natus officiis ipsa repudiandae!</p>
+                <a href="javascript:void(0)" id="prod" onclick="adicionar(7)">Comprar</a>
+                <div class="precos">
+                    <div class="valor">
+                            R$24,99
+                    </div>
+                    <div class="quant">
+                        <div onclick="alertas()">-</div>
+                        <div>1</div>
+                        <div onclick="alertas()">+</div>
+                    </div>
+                </div>
+            </div>  
         </div>
-
-
     </div>
 
 
@@ -116,25 +116,3 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="../menu.js"></script>
 <script src="../carrinho.js"></script>
-
-<script>
-var swiper = new Swiper(".mySwiper", {
-        slidesPerView: "auto",
-        centeredSlides: true,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-</script>

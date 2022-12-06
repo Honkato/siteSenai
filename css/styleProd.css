@@ -103,7 +103,7 @@ nav{
     align-items: center;
     min-width: 280px;
     height: 50px;
-
+    box-shadow: 0px 0px 10px 2px #2a3039;
 }
 
 nav a{
@@ -331,7 +331,7 @@ body {
   }
 
   body {
-    background: rgb(134, 19, 42);
+    background-image: linear-gradient(to right, #248fd3, #164562);
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
@@ -394,8 +394,10 @@ body {
     flex-direction: column;
     border: #000 solid;
     height: 75px;
+    width: 93px;
     justify-content: space-between;
     align-items: center;
+    font-size: 19px;
 }
 .valor{
     display: flex;
@@ -441,7 +443,12 @@ footer{
     text-align: center;
 }
 
-
+.desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 @media screen and (max-width:520px) {
     #menuCat{
         display: flex;
@@ -478,7 +485,7 @@ footer{
     min-width: 280px;
     width: auto;
     max-width: 1000px;
-    height: 1450px;
+    height: 600px;
     margin: auto;
 }
 .logo p{
@@ -505,4 +512,28 @@ footer{
     height: 170px;
 }
 
+.prodPrince{
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    min-width: 600px;
+    height: 500px;
+}
+
+.prod{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.desc{
+    font-size: 20px;
+}
+.desc p{
+    width: 300px;
+}
+
+.prodPrince img{
+    width: 300px;
+}
 }
